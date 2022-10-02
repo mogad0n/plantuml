@@ -1,0 +1,27 @@
+@startuml
+nwdiag {
+  network rigel {
+      address = "10.0.10.0/24"
+      router03 [address = "10.0.10.1/24"];
+      router04;
+      lysergic-router;
+      deriweb01 [address = "10.0.10.7/24"];
+      web02 [address = "210.x.x.2"];
+}
+  network sun {
+      address = "10.0.5.0/24"
+      router04 [address = "10.0.5.1/24"];
+      router03;
+      lysergic-router;
+}
+  network kitchen {
+      address = "192.168.20.0/24"
+      lysergic-router [address = "192.168.20.2/24"];
+      router04;
+      router03;
+      opaon [address = "192.168.20.3/24"];
+
+
+	}
+}
+@enduml
